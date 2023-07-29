@@ -1,0 +1,84 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 50rem;
+  width: 100%;
+  border-radius: 1.25rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.loader {
+  animation: spin 3s linear infinite;
+  margin: auto;
+  margin: 2rem;
+}
+
+.inputContent {
+  padding: 3rem 2rem;
+  width: 100%;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  .inputWrapper {
+    display: flex;
+    font-size: 1.9rem;
+    align-items: center;
+  }
+}
+
+.resultsContent {
+  width: 100%;
+  font-size: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .resultsTop {
+    width: 100%;
+    padding: 1rem 2rem 0 2rem;
+
+    .restartButton {
+      border-radius: 100%;
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      margin-left: auto;
+    }
+  }
+
+  .resultsText {
+    max-height: 40rem;
+    overflow-y: auto;
+    padding: 0 2rem 3rem 2rem;
+  }
+}
+
+.error {
+  transition: border-color 0.2s ease;
+  border: 1px solid #eccc18;
+}
