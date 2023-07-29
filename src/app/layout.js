@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./globals.scss";
 import localFont from "next/font/local";
 
 // Font files can be colocated inside of `app`
