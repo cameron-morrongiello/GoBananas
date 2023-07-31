@@ -1,0 +1,11 @@
+.linkWrapper {
+  align-self: center;
+
+  .linkText {
+    color: #eccc18;
+
+    &:hover {
+      color: #eccc18bb;
+    }
+  }
+}
