@@ -11,6 +11,35 @@ body {
   box-sizing: border-box;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0.5rem;
+}
+
+.container {
+  max-width: 50rem;
+  width: 100%;
+  border-radius: 1.25rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentWrapper {
+  padding: 3rem 2rem;
+  width: 100%;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 button {
   background-color: #eccc18;
   color: #fffceb;
@@ -40,4 +69,11 @@ input {
   font-size: 2rem;
   font-family: "Fredoka", sans-serif;
   border-radius: 0.75rem;
+  width: 100%;
+  text-align: center;
+  max-width: 20rem;
+}
+
+input[disabled] {
+  color: black;
 }
